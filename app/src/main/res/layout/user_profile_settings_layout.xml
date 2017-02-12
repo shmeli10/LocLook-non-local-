@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/User_Profile_LL"
+    style="@style/Base_LL">
+
+    <LinearLayout style="@style/Yellow_HeaderBlock_LL">
+
+        <LinearLayout
+            android:id="@+id/UserProfileSettings_ArrowBackWrapLL"
+            style="@style/Image_Wrap"
+            android:layout_width="70dp">
+
+            <ImageView
+                android:id="@+id/UserProfileSettings_ArrowBackIV"
+                style="@style/ArrowBack_IV" />
+
+        </LinearLayout>
+        <View style="@style/Strut"/>
+        <TextView
+            android:id="@+id/UserProfileSettings_TitleTV"
+            style="@style/Title_HeaderBlock_TV"/>
+        <View style="@style/Strut"/>
+        <LinearLayout
+            android:id="@+id/UserProfileSettings_SaveChangesWrapLL"
+            style="@style/Image_Wrap"
+            android:layout_width="70dp">
+
+            <View style="@style/One_Row_Strut" />
+            <ImageView
+                android:id="@+id/UserProfileSettings_SaveChangesIV"
+                style="@style/UserProfile_TopBgLLPublicationSettings_IV" />
+                <!--style="@style/PublicationSettings_IV" />-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <ScrollView style="@style/FW">
+
+        <FrameLayout style="@style/FF">
+
+            <LinearLayout style="@style/FFV">
+
+                <LinearLayout style="@style/FWH">
+
+                    <ImageView
+                        android:id="@+id/UserProfileSettings_UserPageCoverIV"
+                        style="@style/UserProfile_UserPageCover_IV" />
+
+                    <!--<com.android.volley.toolbox.NetworkImageView-->
+                        <!--android:id="@+id/UserProfileSettings_PageCoverNIV"-->
+                        <!--style="@style/UserProfile_PageCover_NIV" />-->
+
+                </LinearLayout>
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/UserProfileSettings_PageCoverLL"-->
+                    <!--style="@style/UserProfile_PageCover_LL">-->
+
+                <!--</LinearLayout>-->
+                <LinearLayout
+                    android:id="@+id/UserProfileSettings_DownBGLL"
+                    style="@style/FFH"
+                    android:background="@color/white"
+                    android:layout_height="match_parent">
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/UserProfileSettings_UserDataLL"
+                style="@style/FWV">
+
+                <LinearLayout
+                    android:id="@+id/UserProfileSettings_ProfileHeaderLL"
+                    style="@style/FWH"
+                    android:layout_marginTop="82dp" >
+
+                    <View style="@style/One_Row_Strut"/>
+                    <!--<ImageView-->
+                        <!--android:id="@+id/UserProfileSettings_PageCoverIV"-->
+                        <!--style="@style/UserProfile_PageCover_NIV" />-->
+                    <!--<com.android.volley.toolbox.NetworkImageView-->
+                        <!--android:id="@+id/UserProfileSettings_UserAvatarNIV"-->
+                        <!--style="@style/MenuHeader_UserAvatar_NIV" />-->
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/UserProfileSettings_UserAvatarCIV"
+                        style="@style/UserProfile_UserAvatar_IV"
+                        app:civ_border_width="0dp"
+                        app:civ_border_color="@color/white"/>
+                    <View style="@style/One_Row_Strut"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/UserProfileSettings_ProfileTextDataLL"
+                    style="@style/FWV">
+
+                    <View
+                        style="@style/HLine_Grey"
+                        android:layout_marginTop="20dp"/>
+                    <LinearLayout
+                        android:id="@+id/UserProfileSettings_UserNameLL"
+                        style="@style/UserProfileSettings_WrapET_LL">
+
+                        <TextView
+                            android:id="@+id/UserProfileSettings_UserNameTV"
+                            style="@style/UserProfileSettings_Field_TV"
+                            android:text="@string/user_name_text"/>
+                        <EditText
+                            android:id="@+id/UserProfileSettings_UserNameET"
+                            style="@style/UserProfileSettings_Field_ET"
+                            android:lines="1"
+                            android:maxLength="25"/>
+
+                    </LinearLayout>
+                    <View
+                        style="@style/HLine_Grey"
+                        android:layout_marginTop="20dp"/>
+                    <LinearLayout
+                        android:id="@+id/UserProfileSettings_AboutMeLL"
+                        style="@style/UserProfileSettings_WrapET_LL">
+
+                        <TextView
+                            android:id="@+id/UserProfileSettings_AboutMeTV"
+                            style="@style/UserProfileSettings_Field_TV"
+                            android:text="@string/about_me_text"/>
+                        <EditText
+                            android:id="@+id/UserProfileSettings_AboutMeET"
+                            style="@style/UserProfileSettings_Field_ET"
+                            android:maxLines="8"
+                            android:maxLength="400"/>
+
+                    </LinearLayout>
+                    <View
+                        style="@style/HLine_Grey"
+                        android:layout_marginTop="20dp"/>
+                    <LinearLayout
+                        android:id="@+id/UserProfileSettings_SiteLL"
+                        style="@style/UserProfileSettings_WrapET_LL">
+
+                        <TextView
+                            android:id="@+id/UserProfileSettings_SiteTV"
+                            style="@style/UserProfileSettings_Field_TV"
+                            android:text="@string/site_text"/>
+                        <EditText
+                            android:id="@+id/UserProfileSettings_SiteET"
+                            style="@style/UserProfileSettings_Field_ET"
+                            android:lines="1"/>
+
+                    </LinearLayout>
+                    <View
+                        style="@style/HLine_Grey"
+                        android:layout_marginTop="20dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/UserProfileSettings_PublicationsLL"
+                    style="@style/UserProfile_Publications_LL">
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/UserProfileSettings_ChangeAvatarLL"
+                style="@style/UserProfileSettings_ChangeAvatar_LL">
+
+            </LinearLayout>
+            <!--<LinearLayout-->
+                <!--android:id="@+id/UserProfileSettings_ChangeAvatarLL"-->
+                <!--style="@style/UserProfileSettings_ChangeAvatar_LL" >-->
+                <!--&lt;!&ndash;style="@style/WWV"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginTop="140dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginLeft="195dp">&ndash;&gt;-->
+
+                <!--&lt;!&ndash;<de.hdodenhof.circleimageview.CircleImageView&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/UserProfileSettings_ChangeAvatarIV"&ndash;&gt;-->
+                    <!--&lt;!&ndash;style="@style/UserProfileSettings_ChangeAvatar_IV"&ndash;&gt;-->
+                    <!--&lt;!&ndash;app:civ_border_width="0dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;app:civ_border_color="@color/white"/>&ndash;&gt;-->
+
+            <!--</LinearLayout>-->
+            <LinearLayout
+                style="@style/UserProfileSettings_ChangeBg_LL"
+                android:background="@drawable/rounded_rect_white_5dp"
+                android:alpha="0.9">
+
+                <TextView style="@style/UserProfileSettings_ChangeBg_TV"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/UserProfileSettings_ChangeBgLL"
+                style="@style/UserProfileSettings_ChangeBg_LL"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:id="@+id/UserProfileSettings_ChangeBgTV"
+                    style="@style/UserProfileSettings_ChangeBg_TV"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/NotificationRow_NotificationBodyLL"
+    style="@style/NotificationRow_NotificationBody_LL">
+
+    <LinearLayout
+        android:id="@+id/NotificationRow_NotificationContainerLL"
+        style="@style/NotificationRow_NotificationContainer_LL">
+
+        <LinearLayout
+            android:id="@+id/NotificationRow_TypeLL"
+            style="@style/NotificationRow_Type_LL">
+
+            <ImageView
+                android:id="@+id/NotificationRow_TypeIV"
+                style="@style/NotificationRow_Type_IV" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/NotificationRow_UserAvatarLL"
+            style="@style/NotificationRow_UserAvatar_LL">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/NotificationRow_UserAvatarCIV"
+                style="@style/NotificationRow_UserAvatar_CIV" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/NotificationRow_InfoLL"
+            style="@style/WWV">
+
+            <LinearLayout
+                android:id="@+id/NotificationRow_UserDataLL"
+                style="@style/NotificationRow_UserData_LL">
+
+                <TextView
+                    android:id="@+id/NotificationRow_UserNameTV"
+                    style="@style/AnswerRow_AuthorName_TV" />
+                <TextView
+                    android:id="@+id/NotificationRow_DateTV"
+                    style="@style/NotificationRow_Date_TV" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/NotificationRow_MessageLL"
+                style="@style/WWH">
+
+                <TextView
+                    android:id="@+id/NotificationRow_MessageTV"
+                    style="@style/NotificationRow_Message_TV" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/NotificationRow_HLine_LL"
+        style="@style/FWH">
+
+    </LinearLayout>
+
+</LinearLayout>

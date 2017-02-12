@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MenuHeader_LL">
+
+    <FrameLayout style="@style/MenuHeader_Container_FL">
+
+        <LinearLayout style="@style/FFV">
+
+            <!--<LinearLayout style="@style/FWH">-->
+
+                <ImageView
+                    android:id="@+id/MenuHeader_UserPageCoverIV"
+                    style="@style/MenuHeader_UserPageCover_IV" />
+
+                <!--<com.android.volley.toolbox.NetworkImageView-->
+                    <!--android:id="@+id/MenuHeader_PageCoverNIV"-->
+                    <!--style="@style/MenuHeader_PageCover_NIV" />-->
+            <!--</LinearLayout>-->
+
+        </LinearLayout>
+        <LinearLayout style="@style/MenuHeader_UserDataContainer_LL">
+
+            <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                <!--android:id="@+id/MenuHeader_UserAvatarCIV"-->
+                <!--style="@style/MenuHeader_UserAvatar_CIV"-->
+                <!--app:civ_border_width="1dp"-->
+                <!--app:civ_border_color="@color/white">-->
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/MenuHeader_UserAvatarCIV"
+                style="@style/MenuHeader_UserAvatar_CIV"
+                app:civ_border_width="1dp"
+                app:civ_border_color="@color/white"/>
+
+            <!--<com.android.volley.toolbox.NetworkImageView-->
+                <!--android:id="@+id/MenuHeader_UserAvatarNIV"-->
+                <!--style="@style/MenuHeader_UserAvatar_NIV" />-->
+
+            <!--</de.hdodenhof.circleimageview.CircleImageView>-->
+            <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                <!--android:id="@+id/MenuHeader_UserAvatarCIV"-->
+                <!--style="@style/MenuHeader_UserAvatar_IV"-->
+                <!--app:civ_border_width="1dp"-->
+                <!--app:civ_border_color="@color/white"/>-->
+            <TextView
+                android:id="@+id/MenuHeader_UserNameTV"
+                style="@style/Main_UserName_TV"/>
+            <View
+                android:id="@+id/MenuHeader_HLineLightGrey"
+                style="@style/HLine_Light_Grey"/>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>

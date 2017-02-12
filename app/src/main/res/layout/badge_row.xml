@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/BadgeRow_ContainerLL"
+    style="@style/BadgeRow_Container_LL">
+
+    <LinearLayout
+        android:id="@+id/BadgeRow_DataLL"
+        style="@style/BadgeRow_Data_LL">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/BadgeRow_BadgeImageIV"
+            style="@style/TapeRow_BadgeImage_IV" />
+        <LinearLayout
+            android:id="@+id/BadgeRow_BadgeNameLL"
+            style="@style/BadgeRow_BadgeName_LL">
+
+            <TextView
+                android:id="@+id/BadgeRow_BadgeTextTV"
+                style="@style/BadgeRow_BadgeText_TV"/>
+
+        </LinearLayout>
+        <View style="@style/One_Row_Strut" />
+        <Switch
+            android:id="@+id/BadgeRow_SwitchStatusBTN"
+            style="@style/BadgeRow_SwitchStatus_BTN"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/BadgeRow_HLine_LL"
+        style="@style/FFH">
+
+    </LinearLayout>
+
+</LinearLayout>

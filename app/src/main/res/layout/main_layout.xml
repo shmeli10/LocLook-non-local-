@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Main_LL"
+    style="@style/Main_LL">
+
+    <LinearLayout style="@style/Main_HeaderBlock_LL">
+
+        <ImageView style="@style/Main_AppLogo_IV" />
+        <View style="@style/Strut"/>
+
+    </LinearLayout>
+    <LinearLayout style="@style/FWV">
+
+        <ImageView
+            android:id="@+id/Main_UserAvatarIV"
+            style="@style/Main_UserAvatar_IV" />
+        <TextView
+            android:id="@+id/Main_UserNameTV"
+            style="@style/Main_UserName_TV"/>
+        <View style="@style/HLine_Blue"/>
+        <LinearLayout style="@style/Main_Menu_LL">
+
+            <RelativeLayout
+                android:id="@+id/Main_Tape_RL"
+                style="@style/Main_MenuRow_RL">
+
+                <ImageView
+                    android:id="@+id/Main_TapeLogoIV"
+                    style="@style/Main_TapeLogo_IV" />
+                <TextView
+                    style="@style/Main_MenuItemText_TV"
+                    android:text="@string/tape_text"
+                    android:layout_toRightOf="@+id/Main_TapeLogoIV"
+                    android:layout_marginLeft="15dp"/>
+
+            </RelativeLayout>
+            <LinearLayout style="@style/Main_HLine_Grey_LL">
+
+                <View style="@style/HLine_Grey"/>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/Main_Favorites_RL"
+                style="@style/Main_MenuRow_RL">
+
+                <ImageView
+                    android:id="@+id/Main_FavoritesLogoIV"
+                    style="@style/Main_FavoritesLogo_IV" />
+                <TextView
+                    style="@style/Main_MenuItemText_TV"
+                    android:text="@string/favorites_text"
+                    android:layout_toRightOf="@+id/Main_FavoritesLogoIV"
+                    android:layout_marginLeft="15dp"/>
+
+            </RelativeLayout>
+            <LinearLayout style="@style/Main_HLine_Grey_LL">
+
+                <View style="@style/HLine_Grey"/>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/Main_Notifications_RL"
+                style="@style/Main_MenuRow_RL">
+
+                <ImageView
+                    android:id="@+id/Main_NotificationsLogoIV"
+                    style="@style/Main_NotificationsLogo_IV" />
+                <TextView
+                    style="@style/Main_MenuItemText_TV"
+                    android:text="@string/notifications_text"
+                    android:layout_toRightOf="@+id/Main_NotificationsLogoIV"
+                    android:layout_marginLeft="15dp"/>
+
+            </RelativeLayout>
+            <LinearLayout style="@style/Main_HLine_Grey_LL">
+
+                <View style="@style/HLine_Grey"/>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/Main_Badges_RL"
+                style="@style/Main_MenuRow_RL">
+
+                <ImageView
+                    android:id="@+id/Main_BadgesLogoIV"
+                    style="@style/Main_BadgesLogo_IV" />
+                <TextView
+                    style="@style/Main_MenuItemText_TV"
+                    android:text="@string/badges_text"
+                    android:layout_toRightOf="@+id/Main_BadgesLogoIV"
+                    android:layout_marginLeft="15dp"/>
+
+            </RelativeLayout>
+            <LinearLayout style="@style/Main_HLine_Grey_LL">
+
+                <View style="@style/HLine_Grey"/>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/Main_RegionMap_RL"
+                style="@style/Main_MenuRow_RL">
+
+                <ImageView
+                    android:id="@+id/Main_RegionMapLogoIV"
+                    style="@style/Main_RegionMapLogo_IV" />
+                <TextView
+                    style="@style/Main_MenuItemText_TV"
+                    android:text="@string/region_text"
+                    android:layout_toRightOf="@+id/Main_RegionMapLogoIV"
+                    android:layout_marginLeft="15dp"/>
+                <TextView
+                    android:id="@+id/Main_UserLocationTV"
+                    style="@style/Main_UserLocation_TV"
+                    android:layout_alignParentRight="true"
+                    android:text="Москва"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
